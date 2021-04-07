@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".StoryScreen">
+
+    <ImageView
+        android:id="@+id/whiterunImageView"
+        android:layout_width="740dp"
+        android:layout_height="298dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/whiterun" />
+
+    <TextView
+        android:id="@+id/storyTextView"
+        android:layout_width="401dp"
+        android:layout_height="212dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="10dp"
+        android:text="      You are a Breton Whiterun settler, looking to adventure to Riften to visit an old friend. That friend being a Nord blacksmith, Balimund who works at the The Scorched Hammer in the marketplace. With nothing but time, a small dagger, and 50 Septims in your pocket, you set out into Skyrim on your journey to Riften. You are aware that the walk to Riften won't be so straight forward, but every Breton loves a good fist fight and hates an arrow to the knee. Traveling through breweries and farms you start at a good pace, already 2 hours out from Whiterun, what's the worst that can happen?"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whiterunImageView" />
+
+    <Button
+        android:id="@+id/toSceneBtn"
+        android:layout_width="142dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="4dp"
+        android:onClick="goGameScreen"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/storyTextView"
+        app:layout_constraintVertical_bias="1.0" />
+
+</LinearLayout>

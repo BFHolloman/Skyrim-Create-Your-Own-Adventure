@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".model.AdminActivity">
+
+    <TextView
+        android:id="@+id/usersView"
+        android:layout_width="326dp"
+        android:layout_height="196dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/valueToDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="User To Delete" />
+
+    <Button
+        android:id="@+id/deleteSpecificUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Element"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="288dp" />
+
+    <Button
+        android:id="@+id/deleteAllUsers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete All"
+        tools:layout_editor_absoluteX="286dp"
+        tools:layout_editor_absoluteY="384dp" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Title"
+        tools:layout_editor_absoluteX="294dp"
+        tools:layout_editor_absoluteY="614dp" />
+
+    <TextView
+        android:id="@+id/endingHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+</LinearLayout>
